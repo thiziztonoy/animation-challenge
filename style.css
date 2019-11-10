@@ -1,0 +1,75 @@
+.center{
+    margin: auto;
+    height: 400px;
+    width: 400px;
+    background-color: #ff8d79;
+    margin-top: 130px;
+    position: relative;
+}
+.dots-carrer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+.dot{
+    background-color: white;
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px darkgray;
+}
+.big{
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    animation-name: biga;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.md{
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    animation-name: mda;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.sm{
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    animation-name: sma;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes biga{
+    90%{
+        height: 100px;
+        width: 100px;
+    }
+    10%{
+        height:0px;
+        width:0px;
+    }
+}
+@keyframes mda{
+    80%{
+        height: 70px;
+        width: 70px;
+    }
+    20%{
+        width: 0px;
+        height: 0px;
+    }
+}
+@keyframes sma {
+    60%{
+        width: 40px;
+        height: 40px;
+    }
+    40%{
+        width: 0px;
+        height: 0px;
+    }
+}
